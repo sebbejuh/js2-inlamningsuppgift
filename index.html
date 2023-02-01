@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Inlämningsuppgift</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <form id="form">
+      <input type="text" id="title" placeholder="Enter Todo Title">
+      <button id="btn">Submit</button>
+    </form>
+    <p id="validation" class="d-none">You must enter a title to submit!</p>
+    
+    <div class="modal" id="modal">
+      <p>!!!YOU ARE NOT ALLOWED TO DELETE AN UNCOMPLETE TODO!!!</p>
+      <input type="checkbox" name="check" checked>
+      <label for="check">I am a bad boi and will never attempt this again</label>
+      <br>
+      <button type="button" onclick="closeModal()">OK</button>
+    </div>
+
+    <div id="todo-list">
+      <div class="todo">
+        <p class="todo_title">Gör fler bullar</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
