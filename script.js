@@ -69,7 +69,7 @@ const removeTodo = function(e) {                            //funktion som tar b
             console.log(res)
             if(res.ok) {
                 e.target.parentElement.remove()                 //tar bort div som removeknappen ligger i från DOM
-                const index = todos.findIndex(todo => todo.id == e.target.id) //hittar rätt index i arrayen
+                const index = todos.findIndex(todo => todo.id == e.target.parentElement.id) //hittar rätt index i arrayen
                 todos.splice(index, 1)                                        //tar bort 1 med den indexen
             }
             })
